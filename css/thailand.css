@@ -261,9 +261,9 @@ body {
           background-color: #e62e00; }
 
 #experiences {
-  background-image: url("../img/clouds.jpg");
+  background-image: url("../img/sea.jpg");
   background-size: cover;
-  background-position: 100% 20%;
+  background-position: 0% 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -334,6 +334,76 @@ body {
       background-color: #fff;
       color: #000;
       font-weight: 700; }
+
+#blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #blog h6 {
+    font-family: "Heebo", sans-serif;
+    font-size: .8rem;
+    margin-top: 4rem;
+    margin-bottom: .3rem; }
+  #blog h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    margin: 0; }
+  #blog #blogBox {
+    max-width: 68%; }
+    #blog #blogBox #smallBox {
+      margin: 4rem 0; }
+      #blog #blogBox #smallBox img {
+        max-width: 100%; }
+      #blog #blogBox #smallBox #textBlog1 h6 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin-top: .5rem; }
+      #blog #blogBox #smallBox #textBlog1 #faceDate {
+        display: flex;
+        align-items: center; }
+        #blog #blogBox #smallBox #textBlog1 #faceDate img {
+          border-radius: 50%;
+          height: 40px;
+          width: auto; }
+        #blog #blogBox #smallBox #textBlog1 #faceDate #dateBox {
+          margin-left: 10px;
+          margin-top: .7rem; }
+          #blog #blogBox #smallBox #textBlog1 #faceDate #dateBox p {
+            font-family: "Heebo", sans-serif;
+            font-size: .8rem;
+            font-weight: 700;
+            margin: .5rem 0; }
+          #blog #blogBox #smallBox #textBlog1 #faceDate #dateBox #fecha {
+            font-weight: 100;
+            color: #6B6B6B; }
+    #blog #blogBox #bigBox {
+      margin-bottom: 4rem; }
+      #blog #blogBox #bigBox img {
+        max-width: 100%; }
+      #blog #blogBox #bigBox #textBlog2 h6 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin-top: .5rem; }
+      #blog #blogBox #bigBox #textBlog2 #faceDate2 {
+        display: flex;
+        align-items: center; }
+        #blog #blogBox #bigBox #textBlog2 #faceDate2 img {
+          border-radius: 50%;
+          height: 40px;
+          width: auto; }
+        #blog #blogBox #bigBox #textBlog2 #faceDate2 #dateBox2 {
+          margin-left: 10px;
+          margin-top: .7rem; }
+          #blog #blogBox #bigBox #textBlog2 #faceDate2 #dateBox2 p {
+            font-family: "Heebo", sans-serif;
+            font-size: .8rem;
+            font-weight: 700;
+            margin: .5rem 0; }
+          #blog #blogBox #bigBox #textBlog2 #faceDate2 #dateBox2 #fecha2 {
+            font-weight: 100;
+            color: #6B6B6B; }
 
 @media screen and (min-width: 600px) {
   #discover #gallery {
@@ -578,7 +648,43 @@ body {
     margin-top: 2.2rem; }
 
   #experiences .container {
-    max-width: 900px; } }
+    max-width: 900px; }
+
+  #blog {
+    margin-bottom: 7rem; }
+    #blog h6 {
+      font-size: .7rem;
+      margin-top: 6rem;
+      margin-bottom: .3rem; }
+    #blog h3 {
+      font-size: 2.2rem;
+      margin: 0; }
+    #blog #blogBox {
+      width: 90%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-between;
+      margin-top: 4rem; }
+      #blog #blogBox #smallBox {
+        margin: 0;
+        width: 37%; }
+        #blog #blogBox #smallBox img {
+          max-width: 100%; }
+        #blog #blogBox #smallBox #textBlog1 h6 {
+          font-family: "Heebo", sans-serif;
+          font-size: .9rem;
+          line-height: 1.7rem;
+          margin-top: .5rem; }
+        #blog #blogBox #smallBox #textBlog1 #faceDate #dateBox p {
+          font-size: .8rem; }
+        #blog #blogBox #smallBox #textBlog1 #faceDate #dateBox #fecha {
+          font-weight: 100;
+          color: #6B6B6B; }
+      #blog #blogBox #bigBox {
+        margin-bottom: 0;
+        width: 60%; } }
 @media screen and (min-width: 1200px) {
   #cabecera {
     max-height: auto; }
@@ -744,7 +850,18 @@ body {
     font-size: 3.6rem;
     margin-bottom: 6rem; }
   #experiences .container .exp ul li {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  #blog {
+    margin-bottom: 7rem; }
+    #blog h6 {
+      font-size: .9rem;
+      margin-top: 8rem; }
+    #blog h3 {
+      font-size: 2.6rem; }
+    #blog #blogBox {
+      width: 1000px;
+      max-width: 1000px; } }
 @media screen and (min-width: 1440px) {
   #cabecera {
     max-height: auto; }
@@ -831,7 +948,17 @@ body {
     #discover #gallery .container {
       max-width: 100%; }
       #discover #gallery .container img {
-        max-width: 48%; } }
+        max-width: 48%; }
+
+  #blog {
+    margin-bottom: 7rem; }
+    #blog h6 {
+      font-size: .9rem; }
+    #blog h3 {
+      font-size: 2.6rem; }
+    #blog #blogBox {
+      width: 1000px;
+      max-width: 1000px; } }
 @media screen and (min-width: 1600px) {
   #tours {
     padding-bottom: 5rem;
