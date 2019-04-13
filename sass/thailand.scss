@@ -1,5 +1,6 @@
-$fontTitle : 'Heebo', sans-serif;
+$fontTitle :  'Playfair Display', serif;
 $handWritten: 'Give You Glory', cursive;
+$fontText: 'Heebo', sans-serif;
 $tituloMovil: 1.5rem;
 
 $blanco: #fff;
@@ -13,7 +14,7 @@ background-color: #FBFBFB;
 }
 
 #cabecera{
-	background-image: url(../img/1.jpg);
+	background-image: url(../img/sunset.jpg);
 	background-size: cover;
 	background-position: 10% 40%;
 	min-height: 100vh;
@@ -40,6 +41,7 @@ background-color: #FBFBFB;
 
 		ul{
 			display: none;
+			font-family: $fontText;
 		}
 
 		i{
@@ -57,10 +59,9 @@ background-color: #FBFBFB;
 
 		h3{
 			margin: 0;
-			font-family: $fontTitle;
+			font-family: $fontText;
 			font-size: .7rem;
 			color: #ffff66;
-			text-transform: uppercase;
 			letter-spacing: .2rem;
 		}
 
@@ -73,7 +74,7 @@ background-color: #FBFBFB;
 
 		button{
 			margin: 2rem 0 0 0;
-			font-family: $fontTitle;
+			font-family: $fontText;
 			font-size: .8rem;
 			min-width: 150px;
 			color: #fff;
@@ -97,19 +98,18 @@ background-color: #FBFBFB;
 }
 
 #tours{
-	padding-bottom: 5rem;
+	padding-bottom: 2rem;
 
 	#imageBox{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 5rem 0;
+		padding: 4rem 0 2rem;
 
 		h3{
 			font-family: $fontTitle;
 			font-size: 2rem;
-			text-transform: uppercase;
 			padding-bottom: 1rem;
 		}
 
@@ -176,7 +176,7 @@ background-color: #FBFBFB;
 				}
 
 				li{
-					font-family: $fontTitle;
+					font-family: $fontText;
 					font-size: 1rem;
 					list-style: none;
 					line-height: 1.6rem;
@@ -187,6 +187,447 @@ background-color: #FBFBFB;
 		}
 	}
 }
+
+#discover{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	#tituloBox{
+		max-width: 68%;
+
+		h3{
+			font-family: $fontTitle;
+			font-size: 1.5rem;
+			line-height: 1.9rem;
+		}
+	}
+
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 68%;
+
+		#textBox1{
+
+			p{
+				font-family: $fontText;
+				font-size: .9rem;
+				line-height: 1.4rem;
+				color: $darkGrey;
+			}
+		}
+
+		#textBox2{
+
+			p{
+				font-family: $fontText;
+				font-size: .9rem;
+				line-height: 1.4rem;
+				color: $darkGrey;
+			}
+		}
+	}
+
+	#gallery{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 4rem;
+
+		.container{
+
+			max-width: 68%;
+
+			img{
+				max-width: 100%;
+				padding: 1rem 0;
+			}
+		}
+	}
+}
+
+#customers{
+	
+	background-image: url("../img/map.jpg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+	margin-top: 1.2rem;
+
+	.container{
+		max-width: 68%;
+
+		h3{
+			font-family: $fontTitle;
+			font-size: 1.5rem;
+			color: #252525;
+			letter-spacing: 1px;
+		}
+
+		i{
+			color: $orange;
+		}
+
+		#textContainer{
+			p{
+				font-family: $fontText;
+				font-size: .9rem;
+				line-height: 1.4rem;
+			}
+
+			#customerID{
+				padding-top: .4rem;
+				font-family: $fontText;
+				font-size: .8rem;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+#packages{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #F7F7F7;
+	padding-bottom: 3rem;
+	
+	.titleContainer{
+		max-width: 68%;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: left;
+
+		h3{
+			font-family: $fontTitle;
+			font-size: 1.5rem;
+			margin-top: 4rem;
+			margin-bottom: 1rem;
+		}	
+
+		p{
+			font-family: $fontText;
+			font-size: .9rem;
+			line-height: 1.4rem;
+			color: $darkGrey;
+		}
+	}
+
+	.container{
+		max-width: 68%;
+
+			.package{
+				padding: 1rem 0 2.5rem;
+
+				img{
+					max-width: 100%;
+				}
+
+				.packText{
+					max-width: 90%;
+
+					h6{
+						font-family: $fontText;
+						font-size: 1rem;
+						line-height: 1.5rem;
+						margin: 1.5rem 0;
+					}
+
+					.date{
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						max-width: 150px;
+
+						p{
+						 	margin: 0;
+						 	font-size: .7rem;
+						 	font-weight: 700;
+						 	color: #000;
+						}
+					}
+
+					p{
+						font-family: $fontText;
+					 	margin: 1rem 0;
+					 	font-size: .9rem;
+					 	line-height: 1.4rem;
+					}
+
+					button{
+						margin: .5rem 0 0 0;
+						font-family: $fontText;
+						font-size: .9rem;
+						font-weight: 700;
+						min-width: 100px;
+						color: #fff;
+						padding: .8rem 1.5rem;
+						border: 1px solid white;
+						background-color: $orange;
+						cursor: pointer;
+						outline:none;
+						-webkit-transition: all ease-out 1s;
+					    -moz-transition: all ease-out 1s;
+					    -o-transition: all ease-out 1s;
+					    transition: all ease-out 1s;
+					}
+
+					button:hover{
+						background-color: #e62e00;
+					}
+				}
+			}
+		}
+	}
+
+#experiences{
+	background-image: url("../img/clouds.jpg");
+	background-size: cover;
+	background-position: 100% 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 0 5rem;
+
+	.container{
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h6{
+			font-family: $fontText;
+			font-size: .7rem;
+			color: #fff;
+			padding-top: 1rem;
+			margin-bottom: .5rem;
+			color: #fff;
+			letter-spacing: 1px;
+		}
+
+		h2{
+			font-family: $fontTitle;
+			font-size: 2.2rem;
+			margin-top: .2rem;
+			margin-bottom: 4rem;
+			color: #fff;
+		}
+
+		.exp{
+			width: 100%;
+			border-top: 1px solid white;
+			padding: .5rem 0;
+
+			ul{
+			
+				list-style: none;
+				padding-left: 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+
+				li{	
+					font-family: $fontTitle;
+					font-size: .8rem;
+					font-weight: 100;
+					padding: 0 ;
+					max-width: 80%;
+					color: #fff;
+				}
+
+				.titulo{
+					font-size: 1.3rem;
+					font-weight: 700;
+					max-width: 10%;
+				}
+
+				.guided{
+					display: none;
+				}
+			}
+		}
+
+		#lastul{
+			border-bottom: 1px solid #fff;
+		}
+
+		button{
+			margin: 4rem 0 0 0;
+			font-family: $fontText;
+			font-size: .8rem;
+			min-width: 150px;
+			color: #fff;
+			padding: 1rem 2rem;
+			border: 1px solid white;
+			background-color: transparent;
+			cursor: pointer;
+			outline:none;
+			-webkit-transition: all ease-out 1s;
+		    -moz-transition: all ease-out 1s;
+		    -o-transition: all ease-out 1s;
+		    transition: all ease-out 1s;
+		}
+
+		button:hover{
+			background-color: #fff;
+			color: #000;
+			font-weight: 700;
+		}
+	}
+}
+
+
+
+
+@media screen and (min-width: 600px) { 
+
+	#discover{
+
+		#gallery{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 4rem;
+			max-width: 68%;
+
+			.container{
+
+				max-width:	100%;
+
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) { 
+
+	#packages{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #F7F7F7;
+		padding-bottom: 5rem;
+		
+		.titleContainer{
+			width: 68%;
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+
+
+			h3{
+				font-family: $fontTitle;
+				font-size: 2rem;
+				margin-top: 7rem;
+				margin-bottom: 1rem;
+			}	
+
+			p{
+				font-family: $fontText;
+				font-size: .9rem;
+				line-height: 1.4rem;
+				color: $darkGrey;
+				max-width: 55%;
+			}
+		}
+
+	.container{
+		width: 68%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+			.package{
+				width: 47.5%;
+				padding: 1rem 0 2.5rem;
+
+				img{
+					max-width: 100%;
+				}
+
+				.packText{
+					max-width: 90%;
+
+					h6{
+						font-family: $fontText;
+						font-size: 1rem;
+						line-height: 1.5rem;
+						margin: 1.5rem 0;
+					}
+
+					.date{
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						max-width: 150px;
+
+						p{
+						 	margin: 0;
+						 	font-size: .7rem;
+						 	font-weight: 700;
+						 	color: #000;
+						}
+					}
+
+					p{
+						font-family: $fontText;
+					 	margin: 1rem 0;
+					 	font-size: .9rem;
+					 	line-height: 1.4rem;
+					}
+
+					button{
+						margin: .5rem 0 0 0;
+						font-family: $fontText;
+						font-size: .9rem;
+						font-weight: 700;
+						min-width: 100px;
+						color: #fff;
+						padding: .8rem 1.5rem;
+						border: 1px solid white;
+						background-color: $orange;
+						cursor: pointer;
+						outline:none;
+						-webkit-transition: all ease-out 1s;
+					    -moz-transition: all ease-out 1s;
+					    -o-transition: all ease-out 1s;
+					    transition: all ease-out 1s;
+					}
+
+					button:hover{
+						background-color: #e62e00;
+					}
+				}
+			}
+		}
+	}
+	
+	#experiences{
+
+		.container{
+			width: 600px;
+			}
+		}
+	}
 
 
 @media screen and (min-width: 1024px) { 
@@ -221,7 +662,6 @@ background-color: #FBFBFB;
 				padding-right: 6rem;
 
 				li{
-					font-family: $fontTitle;
 					font-size: .8rem;
 					color: lightgrey;
 					padding: 0 1rem;
@@ -271,9 +711,7 @@ background-color: #FBFBFB;
 			padding: 5rem 0;
 
 			h3{
-				font-family: $fontTitle;
-				font-size: 2rem;
-				text-transform: uppercase;
+				font-size: 2.5rem;
 				padding-bottom: 1rem;
 			}
 
@@ -340,7 +778,6 @@ background-color: #FBFBFB;
 				}
 
 				h5{
-					font-family: $fontTitle;
 					font-size: 1.2rem;
 					margin: .3rem 0;
 				}
@@ -354,7 +791,6 @@ background-color: #FBFBFB;
 					}
 
 					li{
-						font-family: $fontTitle;
 						font-size: 1rem;
 						list-style: none;
 						line-height: 1.6rem;
@@ -364,7 +800,85 @@ background-color: #FBFBFB;
 				}
 			}
 		}
-	}	
+	}
+
+	#discover{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		#tituloBox{
+
+		max-width: 69%;
+
+			h3{
+				font-size: 2.5rem;
+				line-height: 2.9rem;
+				text-align: center;
+			}
+		}
+
+		.container{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			max-width: 85%;
+
+			#textBox1{
+
+				padding: 10px 30px;
+
+				p{
+					font-size: 1rem;
+					line-height: 1.5rem;
+					color: $darkGrey;
+				}
+			}
+
+			#textBox2{
+
+				padding: 10px 30px;
+
+				p{
+					font-size: 1rem;
+					line-height: 1.5rem;
+					color: $darkGrey;
+				}
+			}
+		}
+
+		#gallery{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 4rem;
+			max-width: 80%;
+
+			.container{
+
+				max-width:	100%;
+
+				img{
+					max-width: 48%;
+				}
+			}
+		}
+	}
+
+	#customers{
+		padding: 4rem 0;
+		margin-top: 2.2rem;
+	}
+
+	#experiences{
+
+		.container{
+			max-width: 900px;
+		}
+	}
 }
 
 @media screen and (min-width: 1200px) { 
@@ -520,7 +1034,146 @@ background-color: #FBFBFB;
 				}
 			}
 		}
-	}	
+	}
+
+	#discover{
+
+		#tituloBox{
+
+			max-width: 50%;
+
+			}
+
+			.container{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1000px;
+
+				#textBox1{
+
+					p{
+						font-size: 1rem;
+						line-height: 1.5rem;
+						color: $darkGrey;
+					}
+				}
+
+				#textBox2{
+
+					p{
+						font-size: 1rem;
+						line-height: 1.5rem;
+						color: $darkGrey;
+					}
+				}
+			}
+
+			#gallery{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 4rem;
+				max-width: 950px;
+
+				.container{
+
+					max-width:	100%;
+
+					img{
+						max-width: 48%;
+					}
+				}
+			}	
+		}
+
+	#customers{
+		padding-bottom: 5.5rem;
+
+		.container{
+			max-width: 50%;
+
+			h3{
+				font-family: $fontTitle;
+				font-size: 2rem;
+				color: #252525;
+				letter-spacing: 1px;
+			}
+
+			#textContainer{
+				max-width: 100%;
+				p{
+					font-size: 1rem;
+					line-height: 1.8rem;
+				}
+
+				#customerID{
+					padding-top: .4rem;
+					font-size: .8rem;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+
+	#packages{
+		padding-bottom: 5rem;
+		
+		.titleContainer{
+			min-width: 1000px;
+
+			h3{
+				margin-top: 7rem;
+				margin-bottom: 1rem;
+			}	
+
+			p{
+				max-width: 450px;
+			}
+		}
+
+	.container{
+		min-width: 1000px;
+
+			.package{
+				width: 23%;
+
+				.packText{
+
+
+					.date{
+						max-width: 150px;
+					}
+				}
+			}
+		}
+	}
+
+	#experiences{
+
+		.container{
+
+			h6{
+				font-size: .9rem;
+			}
+
+			h2{
+				font-size: 3.6rem;
+				margin-bottom: 6rem;
+			}
+
+			.exp{
+
+				ul{
+					li{
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -550,7 +1203,7 @@ background-color: #FBFBFB;
 				}
 
 				.container{
-					width: 100%;
+					width: 90%;
 					display: flex;
 					flex-direction: row;
 					justify-content: center;
@@ -587,7 +1240,7 @@ background-color: #FBFBFB;
 
 			#textBox{
 				margin: 0 auto;
-				width: 100%;
+				width: 90%;
 
 				.container{
 					width: 100%;
@@ -617,8 +1270,65 @@ background-color: #FBFBFB;
 					}
 				}
 			}
-		}	
-	}
+		}
+
+		#discover{
+
+		#tituloBox{
+
+			max-width: 800px;
+
+			}
+
+			.container{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1100px;
+
+				#textBox1{
+					width: 45%;
+
+
+						p{
+							font-size: 1rem;
+							line-height: 1.5rem;
+							color: $darkGrey;
+						}
+					}
+
+					#textBox2{
+						width: 45%;
+
+						p{
+							font-size: 1rem;
+							line-height: 1.5rem;
+							color: $darkGrey;
+						}
+					}
+				}
+
+				#gallery{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 4rem;
+					max-width: 1040px;
+
+
+					.container{
+
+						max-width:	100%;
+
+						img{
+							max-width: 48%;
+						}
+					}
+				}		
+			}		
+		}
 
 
 	@media screen and (min-width: 1600px) { 

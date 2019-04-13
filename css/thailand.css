@@ -2,7 +2,7 @@ body {
   background-color: #FBFBFB; }
 
 #cabecera {
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/sunset.jpg);
   background-size: cover;
   background-position: 10% 40%;
   min-height: 100vh;
@@ -24,7 +24,8 @@ body {
       padding-top: 1.25rem;
       color: #fff; }
     #cabecera nav ul {
-      display: none; }
+      display: none;
+      font-family: "Heebo", sans-serif; }
     #cabecera nav i {
       color: #fff;
       padding: 1rem 1rem 0 0; }
@@ -39,11 +40,10 @@ body {
       font-family: "Heebo", sans-serif;
       font-size: .7rem;
       color: #ffff66;
-      text-transform: uppercase;
       letter-spacing: .2rem; }
     #cabecera .container h1 {
       margin: .5rem 0;
-      font-family: "Heebo", sans-serif;
+      font-family: "Playfair Display", serif;
       font-size: 4rem;
       color: #fff; }
     #cabecera .container button {
@@ -67,17 +67,16 @@ body {
       font-weight: 700; }
 
 #tours {
-  padding-bottom: 5rem; }
+  padding-bottom: 2rem; }
   #tours #imageBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0; }
+    padding: 4rem 0 2rem; }
     #tours #imageBox h3 {
-      font-family: "Heebo", sans-serif;
+      font-family: "Playfair Display", serif;
       font-size: 2rem;
-      text-transform: uppercase;
       padding-bottom: 1rem; }
     #tours #imageBox .container {
       width: 90%;
@@ -108,7 +107,7 @@ body {
     #tours #textBox .container {
       width: 70%; }
       #tours #textBox .container h5 {
-        font-family: "Heebo", sans-serif;
+        font-family: "Playfair Display", serif;
         font-size: 1.2rem;
         margin: .3rem 0; }
       #tours #textBox .container ul {
@@ -124,6 +123,308 @@ body {
           padding: .3rem 0;
           color: #6B6B6B; }
 
+#discover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #discover #tituloBox {
+    max-width: 68%; }
+    #discover #tituloBox h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      line-height: 1.9rem; }
+  #discover .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 68%; }
+    #discover .container #textBox1 p {
+      font-family: "Heebo", sans-serif;
+      font-size: .9rem;
+      line-height: 1.4rem;
+      color: #6B6B6B; }
+    #discover .container #textBox2 p {
+      font-family: "Heebo", sans-serif;
+      font-size: .9rem;
+      line-height: 1.4rem;
+      color: #6B6B6B; }
+  #discover #gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem; }
+    #discover #gallery .container {
+      max-width: 68%; }
+      #discover #gallery .container img {
+        max-width: 100%;
+        padding: 1rem 0; }
+
+#customers {
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 1.2rem; }
+  #customers .container {
+    max-width: 68%; }
+    #customers .container h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      color: #252525;
+      letter-spacing: 1px; }
+    #customers .container i {
+      color: #FF5733; }
+    #customers .container #textContainer p {
+      font-family: "Heebo", sans-serif;
+      font-size: .9rem;
+      line-height: 1.4rem; }
+    #customers .container #textContainer #customerID {
+      padding-top: .4rem;
+      font-family: "Heebo", sans-serif;
+      font-size: .8rem;
+      font-weight: 700; }
+
+#packages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  padding-bottom: 3rem; }
+  #packages .titleContainer {
+    max-width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left; }
+    #packages .titleContainer h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      margin-top: 4rem;
+      margin-bottom: 1rem; }
+    #packages .titleContainer p {
+      font-family: "Heebo", sans-serif;
+      font-size: .9rem;
+      line-height: 1.4rem;
+      color: #6B6B6B; }
+  #packages .container {
+    max-width: 68%; }
+    #packages .container .package {
+      padding: 1rem 0 2.5rem; }
+      #packages .container .package img {
+        max-width: 100%; }
+      #packages .container .package .packText {
+        max-width: 90%; }
+        #packages .container .package .packText h6 {
+          font-family: "Heebo", sans-serif;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          margin: 1.5rem 0; }
+        #packages .container .package .packText .date {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          max-width: 150px; }
+          #packages .container .package .packText .date p {
+            margin: 0;
+            font-size: .7rem;
+            font-weight: 700;
+            color: #000; }
+        #packages .container .package .packText p {
+          font-family: "Heebo", sans-serif;
+          margin: 1rem 0;
+          font-size: .9rem;
+          line-height: 1.4rem; }
+        #packages .container .package .packText button {
+          margin: .5rem 0 0 0;
+          font-family: "Heebo", sans-serif;
+          font-size: .9rem;
+          font-weight: 700;
+          min-width: 100px;
+          color: #fff;
+          padding: .8rem 1.5rem;
+          border: 1px solid white;
+          background-color: #FF5733;
+          cursor: pointer;
+          outline: none;
+          -webkit-transition: all ease-out 1s;
+          -moz-transition: all ease-out 1s;
+          -o-transition: all ease-out 1s;
+          transition: all ease-out 1s; }
+        #packages .container .package .packText button:hover {
+          background-color: #e62e00; }
+
+#experiences {
+  background-image: url("../img/clouds.jpg");
+  background-size: cover;
+  background-position: 100% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 5rem; }
+  #experiences .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #experiences .container h6 {
+      font-family: "Heebo", sans-serif;
+      font-size: .7rem;
+      color: #fff;
+      padding-top: 1rem;
+      margin-bottom: .5rem;
+      color: #fff;
+      letter-spacing: 1px; }
+    #experiences .container h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2.2rem;
+      margin-top: .2rem;
+      margin-bottom: 4rem;
+      color: #fff; }
+    #experiences .container .exp {
+      width: 100%;
+      border-top: 1px solid white;
+      padding: .5rem 0; }
+      #experiences .container .exp ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        #experiences .container .exp ul li {
+          font-family: "Playfair Display", serif;
+          font-size: .8rem;
+          font-weight: 100;
+          padding: 0;
+          max-width: 80%;
+          color: #fff; }
+        #experiences .container .exp ul .titulo {
+          font-size: 1.3rem;
+          font-weight: 700;
+          max-width: 10%; }
+        #experiences .container .exp ul .guided {
+          display: none; }
+    #experiences .container #lastul {
+      border-bottom: 1px solid #fff; }
+    #experiences .container button {
+      margin: 4rem 0 0 0;
+      font-family: "Heebo", sans-serif;
+      font-size: .8rem;
+      min-width: 150px;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: 1px solid white;
+      background-color: transparent;
+      cursor: pointer;
+      outline: none;
+      -webkit-transition: all ease-out 1s;
+      -moz-transition: all ease-out 1s;
+      -o-transition: all ease-out 1s;
+      transition: all ease-out 1s; }
+    #experiences .container button:hover {
+      background-color: #fff;
+      color: #000;
+      font-weight: 700; }
+
+@media screen and (min-width: 600px) {
+  #discover #gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    max-width: 68%; }
+    #discover #gallery .container {
+      max-width: 100%; }
+      #discover #gallery .container img {
+        max-width: 100%; } }
+@media screen and (min-width: 768px) {
+  #packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F7F7;
+    padding-bottom: 5rem; }
+    #packages .titleContainer {
+      width: 68%;
+      display: flex;
+      flex-direction: column;
+      align-items: start; }
+      #packages .titleContainer h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        margin-top: 7rem;
+        margin-bottom: 1rem; }
+      #packages .titleContainer p {
+        font-family: "Heebo", sans-serif;
+        font-size: .9rem;
+        line-height: 1.4rem;
+        color: #6B6B6B;
+        max-width: 55%; }
+    #packages .container {
+      width: 68%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #packages .container .package {
+        width: 47.5%;
+        padding: 1rem 0 2.5rem; }
+        #packages .container .package img {
+          max-width: 100%; }
+        #packages .container .package .packText {
+          max-width: 90%; }
+          #packages .container .package .packText h6 {
+            font-family: "Heebo", sans-serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin: 1.5rem 0; }
+          #packages .container .package .packText .date {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 150px; }
+            #packages .container .package .packText .date p {
+              margin: 0;
+              font-size: .7rem;
+              font-weight: 700;
+              color: #000; }
+          #packages .container .package .packText p {
+            font-family: "Heebo", sans-serif;
+            margin: 1rem 0;
+            font-size: .9rem;
+            line-height: 1.4rem; }
+          #packages .container .package .packText button {
+            margin: .5rem 0 0 0;
+            font-family: "Heebo", sans-serif;
+            font-size: .9rem;
+            font-weight: 700;
+            min-width: 100px;
+            color: #fff;
+            padding: .8rem 1.5rem;
+            border: 1px solid white;
+            background-color: #FF5733;
+            cursor: pointer;
+            outline: none;
+            -webkit-transition: all ease-out 1s;
+            -moz-transition: all ease-out 1s;
+            -o-transition: all ease-out 1s;
+            transition: all ease-out 1s; }
+          #packages .container .package .packText button:hover {
+            background-color: #e62e00; }
+
+  #experiences .container {
+    width: 600px; } }
 @media screen and (min-width: 1024px) {
   #cabecera {
     background-image: url(../img/1.jpg);
@@ -149,7 +450,6 @@ body {
         padding-top: 1rem;
         padding-right: 6rem; }
         #cabecera nav ul li {
-          font-family: "Heebo", sans-serif;
           font-size: .8rem;
           color: lightgrey;
           padding: 0 1rem;
@@ -178,9 +478,7 @@ body {
       align-items: center;
       padding: 5rem 0; }
       #tours #imageBox h3 {
-        font-family: "Heebo", sans-serif;
-        font-size: 2rem;
-        text-transform: uppercase;
+        font-size: 2.5rem;
         padding-bottom: 1rem; }
       #tours #imageBox .container {
         width: 90%;
@@ -220,7 +518,6 @@ body {
           width: 33%;
           margin: 0 10px; }
         #tours #textBox .container h5 {
-          font-family: "Heebo", sans-serif;
           font-size: 1.2rem;
           margin: .3rem 0; }
         #tours #textBox .container ul {
@@ -229,12 +526,59 @@ body {
           #tours #textBox .container ul i {
             color: #FF5733; }
           #tours #textBox .container ul li {
-            font-family: "Heebo", sans-serif;
             font-size: 1rem;
             list-style: none;
             line-height: 1.6rem;
             padding: .3rem 0;
-            color: #6B6B6B; } }
+            color: #6B6B6B; }
+
+  #discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #discover #tituloBox {
+      max-width: 69%; }
+      #discover #tituloBox h3 {
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        text-align: center; }
+    #discover .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 85%; }
+      #discover .container #textBox1 {
+        padding: 10px 30px; }
+        #discover .container #textBox1 p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: #6B6B6B; }
+      #discover .container #textBox2 {
+        padding: 10px 30px; }
+        #discover .container #textBox2 p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: #6B6B6B; }
+    #discover #gallery {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4rem;
+      max-width: 80%; }
+      #discover #gallery .container {
+        max-width: 100%; }
+        #discover #gallery .container img {
+          max-width: 48%; }
+
+  #customers {
+    padding: 4rem 0;
+    margin-top: 2.2rem; }
+
+  #experiences .container {
+    max-width: 900px; } }
 @media screen and (min-width: 1200px) {
   #cabecera {
     max-height: auto; }
@@ -256,18 +600,18 @@ body {
         padding-top: 80%; }
         #cabecera #titleBox .container h3 {
           margin: 0;
-          font-family: "Heebo", sans-serif;
+          font-family: "Playfair Display", serif;
           font-size: .7rem;
           color: #ffff66;
           text-transform: uppercase; }
         #cabecera #titleBox .container h1 {
           margin: .5rem 0;
-          font-family: "Heebo", sans-serif;
+          font-family: "Playfair Display", serif;
           font-size: 4rem;
           color: #fff; }
         #cabecera #titleBox .container button {
           margin: 2rem 0 0 0;
-          font-family: "Heebo", sans-serif;
+          font-family: "Playfair Display", serif;
           font-size: .8rem;
           min-width: 150px; }
 
@@ -315,7 +659,7 @@ body {
           width: 33%;
           margin: 0 10px; }
         #tours #textBox .container h5 {
-          font-family: "Heebo", sans-serif;
+          font-family: "Playfair Display", serif;
           font-size: 1.2rem;
           margin: .3rem 0; }
         #tours #textBox .container ul {
@@ -324,12 +668,83 @@ body {
           #tours #textBox .container ul i {
             color: #FF5733; }
           #tours #textBox .container ul li {
-            font-family: "Heebo", sans-serif;
+            font-family: "Playfair Display", serif;
             font-size: 1rem;
             list-style: none;
             line-height: 1.6rem;
             padding: .3rem 0;
-            color: #6B6B6B; } }
+            color: #6B6B6B; }
+
+  #discover #tituloBox {
+    max-width: 50%; }
+  #discover .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; }
+    #discover .container #textBox1 p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #6B6B6B; }
+    #discover .container #textBox2 p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #6B6B6B; }
+  #discover #gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    max-width: 950px; }
+    #discover #gallery .container {
+      max-width: 100%; }
+      #discover #gallery .container img {
+        max-width: 48%; }
+
+  #customers {
+    padding-bottom: 5.5rem; }
+    #customers .container {
+      max-width: 50%; }
+      #customers .container h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        color: #252525;
+        letter-spacing: 1px; }
+      #customers .container #textContainer {
+        max-width: 100%; }
+        #customers .container #textContainer p {
+          font-size: 1rem;
+          line-height: 1.8rem; }
+        #customers .container #textContainer #customerID {
+          padding-top: .4rem;
+          font-size: .8rem;
+          font-weight: 700; }
+
+  #packages {
+    padding-bottom: 5rem; }
+    #packages .titleContainer {
+      min-width: 1000px; }
+      #packages .titleContainer h3 {
+        margin-top: 7rem;
+        margin-bottom: 1rem; }
+      #packages .titleContainer p {
+        max-width: 450px; }
+    #packages .container {
+      min-width: 1000px; }
+      #packages .container .package {
+        width: 23%; }
+        #packages .container .package .packText .date {
+          max-width: 150px; }
+
+  #experiences .container h6 {
+    font-size: .9rem; }
+  #experiences .container h2 {
+    font-size: 3.6rem;
+    margin-bottom: 6rem; }
+  #experiences .container .exp ul li {
+    font-size: 1rem; } }
 @media screen and (min-width: 1440px) {
   #cabecera {
     max-height: auto; }
@@ -345,7 +760,7 @@ body {
       padding: 5rem 0 2rem;
       width: 100%; }
       #tours #imageBox .container {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -366,11 +781,11 @@ body {
           padding-left: 10px; }
     #tours #textBox {
       margin: 0 auto;
-      width: 100%; }
+      width: 90%; }
       #tours #textBox .container {
         width: 100%; }
         #tours #textBox .container h5 {
-          font-family: "Heebo", sans-serif;
+          font-family: "Playfair Display", serif;
           font-size: 1.2rem;
           margin: .3rem 0; }
         #tours #textBox .container ul {
@@ -379,12 +794,44 @@ body {
           #tours #textBox .container ul i {
             color: #FF5733; }
           #tours #textBox .container ul li {
-            font-family: "Heebo", sans-serif;
+            font-family: "Playfair Display", serif;
             font-size: 1rem;
             list-style: none;
             line-height: 1.6rem;
             padding: .3rem 0;
-            color: #6B6B6B; } }
+            color: #6B6B6B; }
+
+  #discover #tituloBox {
+    max-width: 800px; }
+  #discover .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px; }
+    #discover .container #textBox1 {
+      width: 45%; }
+      #discover .container #textBox1 p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #6B6B6B; }
+    #discover .container #textBox2 {
+      width: 45%; }
+      #discover .container #textBox2 p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #6B6B6B; }
+  #discover #gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    max-width: 1040px; }
+    #discover #gallery .container {
+      max-width: 100%; }
+      #discover #gallery .container img {
+        max-width: 48%; } }
 @media screen and (min-width: 1600px) {
   #tours {
     padding-bottom: 5rem;
