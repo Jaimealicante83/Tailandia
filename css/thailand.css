@@ -51,6 +51,61 @@ body {
 #introduccion.desaparece {
   opacity: 0; }
 
+#menuPpal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 900;
+  background-color: #FF5733;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -800px;
+  -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s; }
+  #menuPpal #menuBox {
+    background-color: #fff;
+    height: 97%;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+    #menuPpal #menuBox i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 1rem 1rem; }
+    #menuPpal #menuBox ul {
+      padding-left: 50px;
+      font-family: "Heebo", sans-serif;
+      opacity: 0;
+      -webkit-transition: all 1.5s;
+      -moz-transition: all 1.5s;
+      -o-transition: all 1.5s;
+      transition: all 1.5s; }
+      #menuPpal #menuBox ul li {
+        color: #000;
+        list-style: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 1rem 0; }
+        #menuPpal #menuBox ul li a {
+          text-decoration: none;
+          cursor: pointer; }
+    #menuPpal #menuBox #primerLi {
+      opacity: 0; }
+    #menuPpal #menuBox #primerLi.mostrar {
+      opacity: 1; }
+
+#menuPpal.mostrando {
+  margin-left: 0; }
+
+#menuPpal.ocultando {
+  margin-left: -800px; }
+
 #cabecera {
   background-image: url(../img/sunset.jpg);
   background-size: cover;
@@ -546,6 +601,15 @@ footer .container {
       #discover #gallery .container img {
         max-width: 100%; } }
 @media screen and (min-width: 768px) {
+  #menuPpal {
+    margin-left: -1200px; }
+
+  #menuPpal.mostrando {
+    margin-left: 0; }
+
+  #menuPpal.ocultando {
+    margin-left: -1200px; }
+
   #packages {
     display: flex;
     flex-direction: column;
@@ -667,9 +731,19 @@ footer .container {
             footer .container .socialContainer .rrssContainer ul li i {
               color: #FF5733; } }
 @media screen and (min-width: 1024px) {
+  #menuPpal {
+    margin-left: -3200px;
+    display: none; }
+
+  #menuPpal.mostrando {
+    margin-left: 0;
+    display: none; }
+
+  #menuPpal.ocultando {
+    margin-left: -3200px;
+    display: none; }
+
   #cabecera {
-    background-image: url(../img/1.jpg);
-    background-size: cover;
     background-position: 10% 80%;
     min-height: 100vh;
     display: flex;
@@ -696,15 +770,15 @@ footer .container {
           padding: 0 1rem;
           list-style: none; }
           #cabecera nav ul li a {
+            cursor: pointer;
             text-decoration: none;
             color: inherit;
-            -webkit-transition: all ease-out .7s;
-            -moz-transition: all ease-out .7s;
-            -o-transition: all ease-out .7s;
-            transition: all ease-out .7s; }
+            -webkit-transition: all ease-out .4s;
+            -moz-transition: all ease-out .4s;
+            -o-transition: all ease-out .4s;
+            transition: all ease-out .4s; }
           #cabecera nav ul li a:hover {
-            color: #fff;
-            font-weight: 700; }
+            color: #fff; }
         #cabecera nav ul .active {
           color: #fff;
           font-weight: 700; }
@@ -908,10 +982,7 @@ footer .container {
         padding-top: 80%; }
         #cabecera #titleBox .container h3 {
           margin: 0;
-          font-family: "Playfair Display", serif;
-          font-size: .7rem;
-          color: #ffff66;
-          text-transform: uppercase; }
+          font-size: .7rem; }
         #cabecera #titleBox .container h1 {
           margin: .5rem 0;
           font-family: "Playfair Display", serif;
@@ -919,7 +990,7 @@ footer .container {
           color: #fff; }
         #cabecera #titleBox .container button {
           margin: 2rem 0 0 0;
-          font-family: "Playfair Display", serif;
+          font-family: "Heebo", sans-serif;
           font-size: .8rem;
           min-width: 150px; }
 
